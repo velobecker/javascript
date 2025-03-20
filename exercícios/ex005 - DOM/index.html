@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/media-queries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>primeiros passos com o DOM</title>
+</head>
+<body>
+    <h1>iniciando estudos com DOM</h1>
+    <p>aqui vai o resultado: </p>
+    <p>aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        document.write(p1.innerHTML)    // pega o HTML inteiro
+        document.write(p1.innerText)    // pega só o texto
+
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'estou aguardando...'                         // simplificado (precisa de um var)
+        window.document.getElementById('msg').innerText = 'olá!'    // completo
+
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'blue'
+
+    </script>
+</body>
+</html>
