@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto";
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+div#area {
+    font-size: 1.5em;
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
