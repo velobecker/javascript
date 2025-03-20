@@ -8,17 +8,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>meu primeiro programa</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>ai, caramba</h1>
-    <p>esqueci que isso tudo aparece no GitHub, então vou arrumar o texto</p>
-    
     <script>
-        window.alert('boa noite, bonitx')
-        window.confirm('está tendo uma boa noite?')
-        window.prompt('qual é o seu vulgo?')
+        var nome = window.prompt('qual é o teu nome?')
+        document.write(`seu nome tem ${nome.length} letras<br>`)
+        document.write(`seu nome em maiúsculas é ${nome.toUpperCase()}<br>`)
+        document.write(`seu nome em minúsculas é ${nome.toLowerCase()}`)
     </script>
-    
 </body>
 </html>
