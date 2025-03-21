@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/media-queries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>vc eh de onde</title>
+</head>
+<body>
+    <h1>vc eh brasiliano?</h1>
+    <label for="txtp">nasceu onde? </label>
+    <input type="text" name="txtp" id="txtp">
+    <input type="button" value="enviar" onclick="conferir()">
+    <p id="resul"></p>
+    <script>
+        function conferir() {
+            let pais = document.querySelector('input#txtp').value
+            let nacionalidade = document.querySelector('p#resul')
+            if (pais.toLowerCase() == 'brasil') {
+                nacionalidade.innerHTML = 'vc eh brasiliano'
+            } else {
+                nacionalidade.innerHTML = 'vc eh estranho'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/media-queries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>sistema de multas</h1>
+    <label for="txtvel">velocidade do carro: </label>
+    <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="calcular()">
+    <p id="res"></p>
+    <p id="multa"></p>
+    <script>
+        function calcular() {
+            let txtv = window.document.querySelector('input#txtvel')
+            let res = window.document.querySelector('p#res')
+            let vel = Number(txtv.value)
+            let multa = window.document.querySelector('p#multa')
+            res.innerHTML = `sua velocidade atual é de ${vel}km/h`
+            if (vel > 80) {
+                multa.innerHTML = 'você foi multado'
+            } else {
+                multa.innerHTML = 'use sempre o cinto de segurança!'
+            }
+        }       
+    </script>
+</body>
+</html>
