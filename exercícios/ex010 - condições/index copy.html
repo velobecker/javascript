@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/media-queries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>pardal</h1>
+    <label for="txtv">velocidade: </label>
+    <input type="number" name="txtv" id="txtv" min='0' required>
+    <input type="button" value="conferir" onclick="calcular()">
+    <p id="velocidade"></p>
+    <p id="multa"></p>
+    <script>
+        function calcular() {
+            let velocidadeCarro = document.querySelector('input#txtv').value
+            let velocidade = document.querySelector('p#velocidade')
+            let multa = document.querySelector('p#multa')
+            
+            if (velocidadeCarro === '' || isNaN(velocidadeCarro)) {
+                velocidade.innerHTML = 'digite uma velocidade válida'
+                return;
+            }
+
+            velocidade.innerHTML = `a velocidade do veículo é ${velocidadeCarro}km/h.`
+            multa.innerHTML = velocidadeCarro > 80 ? 'MULTADO!' : 'utilize sempre o cinto de segurança. boa viagem!'
+        }
+    </script>
+</body>
+</html>
