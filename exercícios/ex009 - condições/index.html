@@ -11,19 +11,19 @@
     <title>vc eh de onde</title>
 </head>
 <body>
-    <h1>vc eh brasiliano?</h1>
-    <label for="txtp">nasceu onde? </label>
+    <h1>você é brasileiro?</h1>
+    <label for="txtp">país onde você nasceu: </label>
     <input type="text" name="txtp" id="txtp">
-    <input type="button" value="enviar" onclick="conferir()">
-    <p id="resul"></p>
+    <input type="button" value="enviar" onclick="consultar()">
+    <p id="resultado"></p>
     <script>
-        function conferir() {
+        function consultar() {
             let pais = document.querySelector('input#txtp').value
-            let nacionalidade = document.querySelector('p#resul')
+            let resultado = document.querySelector('p#resultado')
             if (pais.toLowerCase() == 'brasil') {
-                nacionalidade.innerHTML = 'vc eh brasiliano'
+                resultado.innerHTML = 'você é brasileiro'
             } else {
-                nacionalidade.innerHTML = 'vc eh estranho'
+                resultado.innerHTML = 'você é extrangeiro'
             }
         }
     </script>
