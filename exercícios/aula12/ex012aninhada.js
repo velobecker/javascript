@@ -1,5 +1,5 @@
 let agora = new Date()
-let hora = agora.getHours()
+let hora = agora.getTime()
 console.log(`agora são exatamente ${hora} horas`)
 
 if (hora < 12) {
