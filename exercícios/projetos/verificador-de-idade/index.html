@@ -11,7 +11,34 @@
 </head>
 <body>
     <main>
-
+        <header>
+            <h1>verificador de idade</h1>
+        </header>
+        <article>
+            <div id="form">
+                <div id="inputano">
+                    <label for="ano">ano de nascimento: </label>
+                    <input type="number" name="ano" id="ano" required min="1900" max="2025">
+                </div>
+                <div id="inputgenero">
+                    <p>gênero:
+                    <input type="radio" name="radio" id="masculino" value="masculino"><label for="masculino">masculino</label>
+                    <input type="radio" name="radio" id="feminino" value="feminino"><label for="feminino">feminino</label>
+                    </p>
+                </div>
+                <input id="dados" type="button" value="verificar" onclick="verificar()">
+            </div>
+            <p id="resultado">preencha os dados acima</p>
+            <img id="pessoa" src="" alt="">
+        </article>
+        <footer>
+            <p>
+                <i>@ velobecker</i>
+            </p>
+        </footer>
     </main>
+    <script>
+
+    </script>
 </body>
 </html>
