@@ -15,7 +15,7 @@
             <h1>verificador de idade</h1>
         </header>
         <article>
-            <div id="form">
+            <form id="form">
                 <div id="inputano">
                     <label for="ano">ano de nascimento: </label>
                     <input type="number" name="ano" id="ano" required min="1900" max="2025">
@@ -27,7 +27,7 @@
                     </p>
                 </div>
                 <input id="dados" type="button" value="verificar" onclick="verificar()">
-            </div>
+            </form>
             <p id="resultado">preencha os dados acima</p>
             <img id="pessoa" src="" alt="">
         </article>
@@ -38,7 +38,16 @@
         </footer>
     </main>
     <script>
+        let ano = document.querySelector('input#ano').value
+        let radio = document.querySelectorAll('input[name="radio"]:checked')
+        let sexo = radio.value()
+        let resultado = document.querySelector('p#resultado')
+        let imagem = document.querySelector('img#pessoa')
 
+        resultado.innerHTML = radio
+
+        
+        
     </script>
 </body>
 </html>
