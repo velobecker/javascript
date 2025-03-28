@@ -14,40 +14,30 @@
         <header>
             <h1>verificador de idade</h1>
         </header>
-        <article>
+        <section>
             <form id="form">
                 <div id="inputano">
-                    <label for="ano">ano de nascimento: </label>
-                    <input type="number" name="ano" id="ano" required min="1900" max="2025">
+                    <label for="txtano">ano de nascimento: </label>
+                    <input type="number" name="txtano" id="txtano" required min="0">
                 </div>
                 <div id="inputgenero">
                     <p>gênero:
-                    <input type="radio" name="radio" id="masculino" value="masculino"><label for="masculino">masculino</label>
-                    <input type="radio" name="radio" id="feminino" value="feminino"><label for="feminino">feminino</label>
+                    <input type="radio" name="radsex" id="masc" value="masculino" checked><label for="masc">masculino</label>
+                    <input type="radio" name="radsex" id="fem" value="feminino"><label for="fem">feminino</label>
                     </p>
                 </div>
-                <input id="dados" type="button" value="verificar" onclick="verificar()">
+                <input id="btn-verificar" type="button" value="verificar" onclick="verificar()">
             </form>
-            <p id="resultado">preencha os dados acima</p>
-            <img id="pessoa" src="" alt="">
-        </article>
+            <div id="divresultado">
+                <p id="resultado">preencha os dados acima</p>
+            </div>
+        </section>
         <footer>
             <p>
                 <i>@ velobecker</i>
             </p>
         </footer>
     </main>
-    <script>
-        let ano = document.querySelector('input#ano').value
-        let radio = document.querySelectorAll('input[name="radio"]:checked')
-        let sexo = radio.value()
-        let resultado = document.querySelector('p#resultado')
-        let imagem = document.querySelector('img#pessoa')
-
-        resultado.innerHTML = radio
-
-        
-        
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
