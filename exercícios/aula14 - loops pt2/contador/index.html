@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/media-queries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>contador</h1>
+        </header>
+        <section>
+            <form>
+                <div>
+                    <label for="nstart">início: </label>
+                    <input type="number" name="nstart" id="nstart" min="1" required>
+                </div>
+                <div>
+                    <label for="nend">fim: </label>
+                    <input type="number" name="nend" id="nend" min="1" required>
+                </div>
+                <div>
+                    <label for="nskip">passo: </label>
+                    <input type="number" name="nskip" id="nskip" min="1" required>
+                </div>
+                <div>
+                    <input id="btn-contar" type="button" value="contar" onclick="verificar()">
+                </div>
+            </form>
+            <div>
+                <p id="presult"></p>
+            </div>
+        </section>
+        <footer>
+            <p>@ velobecker</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

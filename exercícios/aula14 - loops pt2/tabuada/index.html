@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/media-queries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>tabuada</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>tabuada</h1>
+        </header>
+        <section>
+            <form>
+                <div id="inputs">
+                    <label for="num">digite um número: </label>
+                    <input type="number" name="num" id="num">
+                    <input type="button" value="calcular" onclick="calcular()">
+                </div>
+                <div id="resultado">
+                    <select name="tabuada" id="seltab" size="10">
+                        <option>digite um número acima</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <p>@ velobecker</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
