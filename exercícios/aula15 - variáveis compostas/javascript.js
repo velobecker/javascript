@@ -16,7 +16,7 @@ console.log(`carros disponíveis na garagem: ${carrosVW}`)
 
 console.log()
 
-console.log(`na garagem há ${carrosVW.length} carros`)
+console.log(`na garagem há ${carrosVW.length} carros`)      // numero de elementos no array
 console.log(carrosVW.sort())                                // coloca em ordem crescente
 
 console.log()
