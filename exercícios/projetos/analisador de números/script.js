@@ -1,4 +1,3 @@
-
     // array
 let numbers = []
 
@@ -24,7 +23,7 @@ function adicionar() {
         // limpa o input
     document.querySelector('input#numinput').value = ''
         // foca no input
-    document.querySelector('Input#numinput').focus()
+    document.querySelector('input#numinput').focus()
     }
 }
 
