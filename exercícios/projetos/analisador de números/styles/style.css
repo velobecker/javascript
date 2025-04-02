@@ -48,6 +48,10 @@ div {
     margin-bottom: 20px;
 }
 
+select#arrayslist {
+    width: 100px;
+}
+
 div#divresultado {
     margin: 20px;
 }
