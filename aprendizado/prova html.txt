@@ -1,0 +1,101 @@
+parte 1
+
+1. elementos block-level são como itens no site. são mostrados um embaixo do outro. elementos inline-level ficam dentro do mesmo bloco, em formato de linha. uma <div>, por padrão, é block-level. itens dentro de um <p> ficam em inline-level. é possível mudar essa propriedade utilizando "display: block;" ou "display: inline;".
+
+2. semântica determina a ordem de importância dos itens dentro de um site. ela é importante para a construção do mesmo e para os sistemas de indexação de motores de pesquisa. exemplo de semântica: <h1> é a tag para título e ela vai de 1 até 6. <h1> pode ser o título, <h2> um subtítulo, seguido de um <p> que é o parágrafo. o motor de pesquisa irá identificar sobre o que é o <p> através dos títulos.
+
+3. pode-se aplicar CSS inline (junto com a tag), no head do document e em um arquivo separado (linkado com "link:css" no head). inline é recomendando quando você está trabalhando sozinho em um projeto simples. no head, quando está trabalhando em projetos simples. em um arquivo separado, quando está trabalhando em um projeto profissional grande.
+
+4. box model é o modelo de dimenções de um elemento (uma box) em CSS. ele é constituido de margin (altera a margem externa do elemento em relação à outros), border (borda do elemento) e padding (margem entre borda e elementos internos). cada um tem 4 dimenções qeu podem ser definidas igualmente (ex: "margin: 10px;") ou individualmente ("margin-left", "margin-top" ou usando um shorthand. ex: "margin: 10px 10px;" ou "padding: 20px 10px 30px 10px;")
+
+5. seletores são identificações de elementos no HTML que podem ser usados para modificados elementos separadamente no CSS e relacioná-los no JavaScript. exemplos: ID "<p id=paragrafo>" ("p#paragrafo" no CSS) para modificar/selecionar um item específico, classe "<div class=conteudo>" ("div.class") para modificar/selecionar itens em uma classe, e pseudo-classe "p#especial:hover" no CSS, para modificar o comportamentos de itens.
+
+6. pseudo-classe modifica o comportamentos de itens. ex: "a:visited" para links já visitados. não sei em totalidade para o que serve um peseudo-elemento, mas sei que o "::after" é usando para referenciar a posição posterior de um elemento de HTML e pode-se criar elementos nessa posição, como por exemplo: "a::after { content: '[link]'; text-decoration: none;}". 
+
+7. media queries são versionamentos do CSS para mudar o comportamento e posição dos elementos de acordo com determinado tamanho de tela de forma responsiva ou para impressão. um media query pode ser criado no mesmo documento de CSS, mas o ideal é criá-lo em um documento separado. a sintaxe pode ser utilizando min ou max width: "@media screen and (min-width: 500px) { 'bloco para colocar as modificações' }". o ideal é criar um site em versão mobile e depois adicionar media queries para dispositivos maiores.
+
+8. o flexbox é uma propriedade que adiciona comportamentos automáticos de redimencionamento de elementos HTML. os principais eixos são o main axis e o cross axis. o main é o eixo principal e está atrelado a direção definida (ex: row = eixo na horizontal, column = eixo na vertical). o cross é o eixo que cruza a direção definida. os containers definidos com propriedades flexbox recebem uma hierarquia de parent e child, e podem ser redimencionados, organizados e alinhados de formas específicas utilizando comandos como justify-content, align-content e align-item.
+(acredito que você errou no enunciado desta questão ao falar os principais eixos. isso entrega parte da resposta para o usuário.)
+
+9. gradientes são aplicações de cores em "degradê". conheço apenas o linear gradient e o radial gradient
+
+10. static: mantém a posição do elemento estática. relative: muda a posição do elemento em relação ao ponto estático dele. absolute: posiciona o elemento em relação ao parent element definido. fixed: mantem a posição do elemento fixa na tela, sem mudar ela quando a página é scrollada. faltou perguntar sobre o sticky, haha. ele faz com que o elemento não saia da tela quando ela é scrollada.
+
+-------------------- Parte 2
+
+1. listas:
+<ul>
+    <li>conteúdo</li>
+    <li>conteúdo</li>
+    <li>conteúdo</li>
+</ul>
+<ol type='i'>
+    <li>conteúdo</li>
+</ol>
+
+2. abrindo uma nova aba:
+<a href:'www.google.com' target:_blank>Google</a>
+<a href:'imagens/doguinho.jpg' download:'imagens/doguinho.jpg' type:'image/jpeg> 
+
+3. imagem de fundo:
+div {
+    background-image: URL imagem.jpg;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+4. flexbox:
+div#pai {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around
+}
+
+5. formulário:
+<form>
+    <label for="nome">nome</label>
+    <input type="text" name="nome" id="nome" required>
+    <label for="iemail">email</label>
+    <input type="email" name="email" id="iemail" pattern="[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+    <label for="select">selecione</label>
+    <select name="select" id="select">
+        <option value="o1">opção 1</option>
+        <option value="o2">opção 2</option>
+        <option value="o3">opção 3</option>
+    </select>
+</form>
+
+6. sticky:
+div#pai > div#filho {
+    position: sticky;
+    top: 0;
+}
+
+7. o ideal seria já montar o CSS considerando telas menores (mobile first), mas dá pra fazer o contrário:
+@media screen and (max-width: 500px) {
+    div#coluna {
+        width: 100%;
+    }
+}
+
+8. borda arredondada:
+img {
+    border-radius: 10px;
+}
+
+9. link:
+a:hover {
+    color: blue;
+}
+
+a:visited {
+    color: pink;
+}
+
+Como você usaria pseudo-elementos para adicionar um pequeno ícone antes do texto de todos os elementos com uma classe específica?
+
+10. pseudo-elementos
+p.especiais::before {
+    content: '\2665';
+}
