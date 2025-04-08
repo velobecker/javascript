@@ -1,0 +1,41 @@
+Parte 1 JS
+
+1. let e var são variáveis que podem mudar de valor. const é uma variável que tem um valor fixo. atualmente não é mais recomendado usar var. pelo que sei, var puxa a declaração para o top do código, mas não puxa seu valor. por favor, me explique mais sobre essa variável na avaliação dessa prova. var tem a ver com hoisting, não?
+
+2. tipos de dados: numbers, strings, booleans, null, array, object. sei que tem mais tipos, porém não cheguei neles ainda.
+
+3. não sei diferenciar as conversions implícitas das explícitas, mas sei que o JavaScript converte alguns dados quando realizamos algumas operações com eles, como por exemplo: somar um número com uma string. também sei converter usando parseInt e parseFloat para números, converter strings para números com Number() e numbers para string com String(), converter datas usando getTime() e os outros tipos de get() relacionados à data.
+
+4. "==" significa equivale e "===" significa é exatamente igual a. geralmente é recomendado usar ===, porém não sei o por quê.
+
+5. arrays e objetos são dados que contém um conjunto de valores. arrays contem valores do mesmo tipo e objetos podem conter diferentes tipos de valores. arrays são definidos usando [] e objetos {}. para acessá-los, pode usar array[0], que equivale à posição dentro do array, e object.exemplo, para objetos.
+
+6. uma função é uma série de códigos que são executados quando a função é chamada. declara-se com "function nomeDaFuncao() { codigo da função }". invoca-se utilizando eventListeners ou triggers no HTML. parámetros são valores informados para que a função opere com eles. não sei o que são os argumentos de funções. por favor, me explique.
+
+7. de novo você deu a resposta no enunciado, kkkk. DOM é a "árvore" dos elementos do HTML. serve como um mapa para realizarmos queries pelo JS.
+
+8. eventListeners são gatilhos executados pelo JS. são adicionados colocando uma "escuta" em algum elemento usando a localização dele no DOM. servem para ativar funções quando certas coisas acontecem com determinados elementos.
+
+9. Date serve para pegar a data do sistema que está executando o código. para pegar o ano, se usa o getFullYear().
+
+O que são template literals em JavaScript e quais as suas vantagens em relação às strings tradicionais?
+
+10. ainda não cheguei neste conteúdo.
+
+
+-------------------- Parte 2 JS
+
+Como você declararia uma variável chamada userName e atribuiria a ela uma string com seu nome?
+Como você escreveria um código JavaScript que verifica se um número armazenado em uma variável é par ou ímpar e exibe uma mensagem no console?
+Como você criaria um loop for que itera sobre um array de números e imprime cada número multiplicado por 2?
+Como você escreveria uma função que recebe dois números como argumentos e retorna a sua soma?
+Como você selecionaria o primeiro elemento <h1> no seu documento HTML usando JavaScript?
+Como você adicionaria um ouvinte de evento a um botão que, ao ser clicado, muda o texto de um parágrafo para "Clicado!"?
+Como você criaria um novo elemento <li> e o adicionaria a uma lista <ul> existente no seu HTML usando JavaScript?
+Como você obteria o valor digitado em um campo de input de um formulário usando JavaScript?
+Como você exibiria uma mensagem de erro personalizada se o usuário digitar um email inválido em um campo de formulário?
+Como você usaria template literals para criar uma string que inclua o valor de duas variáveis (firstName e lastName) para formar o nome completo?
+Como usar esta avaliação:
+
+Responda às perguntas conceituais com o máximo de detalhes possível, explicando o seu entendimento.
+Para as tarefas práticas, descreva os passos que você seguiria para implementá-las em código. Não precisa escrever o código completo, mas seja claro sobre as funções, propriedades e métodos que você usaria.
