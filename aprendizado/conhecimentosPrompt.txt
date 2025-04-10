@@ -1,0 +1,110 @@
+{
+  "aluno": {
+    "perfil": "Autodidata com familiaridade tecnológica, criativo, bom conhecimento de inglês, foco inicial em frontend (HTML, CSS, JavaScript, Flutter), interesse futuro em Python e IA."
+  },
+  "conhecimento_atual": {
+    "html": {
+      "status": "Parcial",
+      "topicos_estudados": [
+        "Sintaxe básica HTML",
+        "Parágrafos e quebras de linha",
+        "Símbolos e emojis",
+        "Imagens (incluindo favicon e dinâmicas)",
+        "Hierarquia de títulos",
+        "Semântica HTML",
+        "Formatação de texto",
+        "Listas (ordenadas e não-ordenadas)",
+        "Links e downloads",
+        "Estilos CSS (inline, interno e externo)",
+        "Cores no CSS",
+        "Tipografia e fontes (incluindo externas)",
+        "Seletores e classes",
+        "Pseudo-classes",
+        "Pseudo-elementos (conhecimento inicial)",
+        "Box Model",
+        "Backgrounds",
+        "Flexbox",
+        "Media Queries",
+        "Tabelas",
+        "Formulários (estrutura básica)",
+        "iframes",
+        "Responsividade (conceitos)",
+        "Gradientes (linear e radial)",
+        "Sombras",
+        "Posicionamento (static, relative, absolute, fixed, sticky - conhecimento inicial)",
+        "Alinhamento (básico)",
+        "Border-radius",
+        "Outlines"
+      ],
+      "observacoes": "Demonstra bom entendimento dos conceitos fundamentais e capacidade de aplicação prática na maioria dos tópicos. Necessidade de aprofundamento em pseudo-elementos e posicionamento sticky."
+    },
+    "css": {
+      "status": "Parcial",
+      "topicos_estudados": [
+        "Estilos CSS (inline, interno e externo)",
+        "Cores no CSS",
+        "Tipografia e fontes (incluindo externas)",
+        "Seletores e classes",
+        "Pseudo-classes",
+        "Pseudo-elementos (conhecimento inicial e uso básico de ::before e ::after)",
+        "Box Model (compreensão completa)",
+        "Backgrounds (incluindo imagens)",
+        "Flexbox (compreensão e aplicação para layout)",
+        "Media Queries (uso para responsividade)",
+        "Gradientes (linear e radial)",
+        "Sombras",
+        "Posicionamento (static, relative, absolute, fixed, sticky - conhecimento inicial e aplicação básica)",
+        "Alinhamento (com Flexbox e outros métodos)",
+        "Border-radius",
+        "Outlines"
+      ],
+      "observacoes": "Bom domínio das propriedades básicas e conceitos de layout. Precisa expandir o conhecimento em pseudo-elementos e aprofundar o uso de posicionamento sticky e outras técnicas de alinhamento."
+    },
+    "javascript": {
+      "status": "Parcial",
+      "topicos_estudados": [
+        "Variables and Data Types (let, const, var - entendimento do hoisting)",
+        "Type Conversion (implícita e explícita - conhecimento básico)",
+        "String Methods (mencionado)",
+        "Math Operators",
+        "Assignment Operators",
+        "Increment/Decrement Operators",
+        "Comparison Operators (== vs === - entendimento da diferença e recomendação de ===)",
+        "Logical Operators",
+        "Conditional (Ternary) Operator (mencionado)",
+        "if/else Statements",
+        "Switch Statements (mencionado)",
+        "while Loops (mencionado)",
+        "do/while Loops (mencionado)",
+        "for Loops (uso básico)",
+        "Arrays (criação e acesso)",
+        "Functions (declaração, invocação, parâmetros e argumentos - entendimento da diferença)",
+        "Objects (criação e acesso)",
+        "DOM Manipulation (seleção básica - getElementByName, querySelector, getElementsByTagName; criação de elementos - createElement; adição de elementos - appendChild - uso incorreto inicial)",
+        "Event Listeners (adição básica)",
+        "Date Object (obtenção do ano)",
+        "Element Selection (revisão necessária)",
+        "Element Creation",
+        "Element Attributes (mencionado)",
+        "Element Styling (mencionado)",
+        "Form Handling (obtenção de valores de input)",
+        "Input Validation (conceito, sem uso prático avançado)",
+        "Media Queries (em JavaScript - mencionado)",
+        "Error Handling (mencionado)",
+        "Template Literals (não estudado)",
+        "Comments"
+      ],
+      "observacoes": "Base sólida nos fundamentos da linguagem. Necessidade de aprofundamento na manipulação do DOM (seleção e estrutura), tratamento de eventos, validação de formulários com JavaScript e aprendizado de Template Literals. Entendimento inicial de hoisting em variáveis."
+    }
+  },
+  "proximos_passos_sugeridos": [
+    "Aprofundar o estudo de pseudo-elementos em CSS e suas aplicações.",
+    "Explorar em detalhes o posicionamento sticky e outras técnicas avançadas de posicionamento em CSS.",
+    "Revisar e praticar as diferentes formas de selecionar elementos no DOM com JavaScript.",
+    "Aprender e praticar a manipulação da estrutura do DOM (adicionar, remover, modificar elementos).",
+    "Estudar o tratamento de eventos em JavaScript de forma mais aprofundada.",
+    "Introduzir o conceito e a prática de validação de formulários usando JavaScript (incluindo RegEx).",
+    "Aprender sobre Template Literals em JavaScript e suas vantagens.",
+    "Continuar a prática com projetos pequenos para solidificar o conhecimento."
+  ]
+}

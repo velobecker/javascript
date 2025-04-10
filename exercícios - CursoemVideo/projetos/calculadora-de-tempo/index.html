@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/media-queries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>calculadora de tempo</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>calculadora de tempo</h1>
+        </header>
+        <section>
+            <form id="form">
+                <label for="field1">quantos </label>
+                <input class="timefields" type="number" name="field1" id="field1" required>
+                <select name="tempo1" id="tempo1">
+                    <option value="sec1">segundos</option>
+                    <option value="min1">minutos</option>
+                    <option value="hr1">horas</option>
+                    <option value="dia1">dias</option>
+                    <option value="sem1">semanas</option>
+                    <option value="mes1">mêses</option>
+                    <option value="ano1">anos</option>
+                </select>
+                <label for="field2">tem em </label>
+                <input class="timefields" type="number" name="field2" id="field2">
+                <select name="tempo2" id="tempo2">
+                    <option value="sec2">segundos</option>
+                    <option value="min2">minutos</option>
+                    <option value="hr2">horas</option>
+                    <option value="dia2">dias</option>
+                    <option value="sem2">semanas</option>
+                    <option value="mes2">mêses</option>
+                    <option value="ano2">anos</option>
+                </select>
+                <input type="button" value="calcular" onclick="calcular()">
+            </form>
+            <div id="divresultado">
+                <p id="resultado"></p>
+            </div>
+        </section>
+        <footer>
+            <p>
+                <i>@ velobecker</i>
+            </p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

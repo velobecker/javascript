@@ -25,17 +25,31 @@ O que são template literals em JavaScript e quais as suas vantagens em relaçã
 
 -------------------- Parte 2 JS
 
-Como você declararia uma variável chamada userName e atribuiria a ela uma string com seu nome?
-Como você escreveria um código JavaScript que verifica se um número armazenado em uma variável é par ou ímpar e exibe uma mensagem no console?
-Como você criaria um loop for que itera sobre um array de números e imprime cada número multiplicado por 2?
-Como você escreveria uma função que recebe dois números como argumentos e retorna a sua soma?
-Como você selecionaria o primeiro elemento <h1> no seu documento HTML usando JavaScript?
-Como você adicionaria um ouvinte de evento a um botão que, ao ser clicado, muda o texto de um parágrafo para "Clicado!"?
-Como você criaria um novo elemento <li> e o adicionaria a uma lista <ul> existente no seu HTML usando JavaScript?
-Como você obteria o valor digitado em um campo de input de um formulário usando JavaScript?
-Como você exibiria uma mensagem de erro personalizada se o usuário digitar um email inválido em um campo de formulário?
-Como você usaria template literals para criar uma string que inclua o valor de duas variáveis (firstName e lastName) para formar o nome completo?
-Como usar esta avaliação:
+1.  let userName = 'Guilherme'
 
-Responda às perguntas conceituais com o máximo de detalhes possível, explicando o seu entendimento.
-Para as tarefas práticas, descreva os passos que você seguiria para implementá-las em código. Não precisa escrever o código completo, mas seja claro sobre as funções, propriedades e métodos que você usaria.
+2.  if (numero % 2 === 0) { console.log('par') } else { console.log('impar') }
+
+3.  let array = [1, 3, 5, 10]
+    for (let i = 0; i <= 3; i ++) {
+        let resultado = array[i] * 2
+        console.log(resultado)
+    }
+
+4.  function soma(a,b) {
+        return a + b
+    }
+
+5. document.getElementByName('h1')
+
+6.  document.querySelector('input#btn').addEventListener("click", function() {
+    p.innerHTML = 'Clicado!'
+})
+
+7.  let item = document.createElement('li')
+    item.appendChild(document.querySelector('ul#lista'))
+
+8.  let valor = document.querySelector('input#campo').value
+
+9. não sei fazer isso sem ser com HTML.
+
+10. não cheguei nessa matéria ainda.
